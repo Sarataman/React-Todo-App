@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FireBase from './FireBase'
+// import FireBase from './firebase'
 import ToDoTasks from './ToDoTasks';
 import AddToDo from './AddToDo';
 
@@ -8,11 +8,11 @@ class ToDoTasksPage extends Component {
         tasks: []
       };
     
-    handleSubmit = task => {
-        let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
-        FireBase.database().ref('messages').push(this.state.tasks);
-        this.setState({tasks: [...this.state.tasks, task]});
-    }
+    // handleSubmit = task => {
+    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
+    //     FireBase.database().ref('messages').push(this.state.tasks);
+    //     this.setState({tasks: [...this.state.tasks, task]});
+    // }
 
     handleDelete = (index) => {
         const newArray = [...this.state.tasks];

@@ -1,16 +1,14 @@
 import React from 'react'
-import { List, ListItem, ListItemAvatar, ListItemText } from '@material-ui/core'
+import { List, ListItem, ListItemText} from '@material-ui/core'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import { Link } from 're'
+import {Link} from 'react-router-dom';
 
 const ToDo = (props) => {
     return(
         <div className="list-item">
             <List>
                 <ListItem>
-                    <ListItemAvatar>
-                    </ListItemAvatar>
-                    <Link>
+                    <Link to="/todotaskspage">
                         <ListItemText primary={props.content} secondary="Deadline for task ⏰" />
                     </Link>
                 </ListItem>
