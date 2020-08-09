@@ -21,6 +21,9 @@ class Login extends Component {
         return (
             <div className="container">
                 <div className="signup-content">
+                    <h1 className="heading">ToDo App</h1>
+                    <br/>
+                    <br/>
                     <form  onSubmit={this.handleSubmit}>
                         <h2>LOGIN</h2>
                         <div className="form-group">
@@ -35,14 +38,14 @@ class Login extends Component {
                                 <Link to="/todolistpage">
                                     <button 
                                         disabled={!this.state.email || !this.state.password} className="form-submit">
-                                        Login
+                                        Log in
                                     </button>
                                 </Link>
                         </div>
                     </form>
                     <p className="loginhere">
                         <strong> Don't have an account yet? 
-                            <Link to="/signup" >Sign up here</Link>
+                            <Link to="/signup" > Sign up here.</Link>
                         </strong>
                     </p>
                 </div>

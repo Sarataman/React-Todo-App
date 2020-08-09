@@ -21,11 +21,10 @@ function AddToDo() {
         })
         setInput('');
     }
-//setTodos([...todos, input]);
     return (
         <form className="add-form">
             <FormControl>
-                <InputLabel>✅Add Item</InputLabel>
+                <InputLabel>Add Item</InputLabel>
                 <Input
                     className="input" 
                     placeholder= "Enter Todo item" 
@@ -50,11 +49,4 @@ function AddToDo() {
 //         this.setState({item: ''});
 //     };
   
-    //add items to database
-    // FireBase.database.collection('todos').add({
-    //     todo: this.state.item,
-    //     timestamp: Firebase.firestore.FieldValue.serverTimestamp()
-    // })
-       
-
 export default AddToDo

@@ -8,10 +8,10 @@ const ToDoTaskItem = (props) => {
                 <ListItem>
                     <ListItemAvatar>
                     </ListItemAvatar>
-                        <ListItemText primary={props.content} secondary="Deadline for task ⏰" />
+                        <ListItemText primary={props.content} secondary="Delete completed tasks✅" />
                 </ListItem>
             </List>
-            <DeleteForeverIcon className="delete is-pulled-right" onClick={() => {props.onDelete(props.id)}} />
+            <DeleteForeverIcon className="delete" onClick={() => {props.onDelete(props.id)}} />
         </div>
     )
 }

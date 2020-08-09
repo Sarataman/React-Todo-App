@@ -8,12 +8,6 @@ class ToDoTasksPage extends Component {
         tasks: []
       };
     
-    // handleSubmit = task => {
-    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
-    //     FireBase.database().ref('messages').push(this.state.tasks);
-    //     this.setState({tasks: [...this.state.tasks, task]});
-    // }
-
     handleDelete = (index) => {
         const newArray = [...this.state.tasks];
         newArray.splice(index, 1);
@@ -33,3 +27,10 @@ class ToDoTasksPage extends Component {
 }
 
 export default ToDoTasksPage;
+
+
+    // handleSubmit = task => {
+    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
+    //     FireBase.database().ref('messages').push(this.state.tasks);
+    //     this.setState({tasks: [...this.state.tasks, task]});
+    // }

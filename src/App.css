@@ -9,7 +9,7 @@ body {
   line-height: 1.8;
   color: #222;
   font-weight: 400;
-  padding: 115px 0;
+  padding: 40px 0;
   overflow-x: hidden;
   font-family: Helvetica;
   background-image: linear-gradient(to left, #52beab, #7287e2); 
@@ -19,6 +19,9 @@ h1 {
   display: inline;
   margin-left: 15px;
   font-weight: 300;
+}
+.heading {
+  font-weight: 600;
 }
 
 input {
@@ -63,7 +66,7 @@ h2 {
 
 .form-group {
   overflow: hidden;
-  margin-bottom: 20px; 
+  margin-bottom: px; 
 }
 
 .form-input {
@@ -127,7 +130,6 @@ a {
 .add-form {
   display: flex;
   justify-content: center;
-  font-family: Verdana;
   padding-top: 10px;
 }
 .wrapper {
@@ -138,7 +140,8 @@ a {
   justify-content: center;
   align-items: center;
   background-color: white;
-}
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 1px #444;}
 .input {
   margin-right: 10px;
   font-size: 20px;
@@ -147,28 +150,43 @@ a {
   width: 100vw;
   max-width: 400px;
 }
-.header {
-  display: inline;
-  text-align: center;
-  padding: 40px;
-}
 
 .list-wrapper {
   overflow-y: auto;
+  padding: 2px 5px;
 }
 
 .card {
   font-family: Helvetica;
 }
 
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
 .list-item {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px 10px;
   margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background-color: #52beab;
 }
 
 .delete {
   border: none;
   margin-top: 35px;
+  color: rgb(245, 89, 89);
+}
+
+.item{
+  padding-left: 20px;
+}
+
+.link:hover {
+  text-decoration: none; 
 }

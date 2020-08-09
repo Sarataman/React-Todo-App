@@ -6,16 +6,9 @@ import AddToDo from './AddToDo';
 
 class ToDoListPage extends Component {
     state = {
-        lists: ['List 1', 'List 2', 'List 3'],
+        lists: ['Work', 'Family', 'Health'],
       };
     
-    // handleSubmit = list => {
-    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
-    //     FireBase.database().ref('messages').set(this.state.lists);
-    //     this.setState({lists: [...this.state.lists, list]});
-    //}
-
-
     handleDelete = (index) => {
         const newArray = [...this.state.lists];
         newArray.splice(index, 1);
@@ -36,3 +29,10 @@ class ToDoListPage extends Component {
 }
 
 export default ToDoListPage;
+
+
+ // handleSubmit = list => {
+    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
+    //     FireBase.database().ref('messages').set(this.state.lists);
+    //     this.setState({lists: [...this.state.lists, list]});
+    //}

@@ -24,6 +24,9 @@ class SignUp extends Component {
             <div className="container">
                 <div className="signup-content">
                     <form onSubmit={this.handleSubmit}>
+                    <h1 className="heading">ToDo App</h1>
+                    <br/>
+                    <br/>
                     <h2>SIGN UP</h2>
                         <div className="form-group">
                             <label for="fullName">Full Name</label>
@@ -53,7 +56,7 @@ class SignUp extends Component {
                     <div>
                         <p>
                             <strong>Already have an account? 
-                                <Link to="/" >Log in here</Link>
+                                <Link to="/" > Log in here.</Link>
                             </strong>
                         </p>
                     </div>
