@@ -14,13 +14,15 @@ class ToDoListPage extends Component {
         newArray.splice(index, 1);
         this.setState({lists: newArray})
     }
+
+
     
     render() {
         return(
             <div className="wrapper">
                 <div className = "App card frame">
                     <Header totalTodos = {this.state.lists.length} name = {this.state.fullName} />
-                    <AddToDo />
+                    <AddToDo onSubmit={this.handleSubmit}/>
                     <ToDoList lists={this.state.lists} onDelete={this.handleDelete} />
                 </div>
             </div>
@@ -31,8 +33,3 @@ class ToDoListPage extends Component {
 export default ToDoListPage;
 
 
- // handleSubmit = list => {
-    //     let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
-    //     FireBase.database().ref('messages').set(this.state.lists);
-    //     this.setState({lists: [...this.state.lists, list]});
-    //}
