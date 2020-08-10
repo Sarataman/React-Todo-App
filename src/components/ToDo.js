@@ -11,7 +11,6 @@ const ToDo = (props) => {
                 <ListItem>
                     <span>
                         <i  class="far fa-circle"></i>
-                        {/* <i  class="fas fa-check-circle"></i> */}
                     </span>
                     <Link to="/todotaskspage" className="link">
                         <ListItemText className= "item" primary={props.content} secondary="Click to add tasks to your list 📑" />
