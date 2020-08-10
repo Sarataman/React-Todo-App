@@ -6,12 +6,7 @@ import FireBase from './firebase'
 class AddToDo extends Component {
     state = {item: ''};
 
-    // handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     if(this.state.item === '') return;
-    //     this.props.onFormSubmit(this.state.item);
-    //     this.setState({item: ''});
-    // };
+    
     handleSubmit = list => {
         let messageRef = FireBase.database().ref('messages').orderByKey().limitToLast(100);
         FireBase.database().ref('messages').set(this.state.lists);
