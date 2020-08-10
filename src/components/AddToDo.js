@@ -26,7 +26,7 @@ class AddToDo extends Component {
     }
     render() {
         return (
-            <form className="add-form" onFormSubmit={this.handleSubmit}>
+            <form className="add-form" onSubmit={this.handleSubmit}>
                 <FormControl>
                     <InputLabel>Add Item</InputLabel>
                     <Input
