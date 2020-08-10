@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import FireBase from './firebase';
 import Header from './Header'
 import ToDoList from './ToDoList';
 import AddToDo from './AddToDo';
@@ -14,8 +13,6 @@ class ToDoListPage extends Component {
         newArray.splice(index, 1);
         this.setState({lists: newArray})
     }
-
-
     
     render() {
         return(
